@@ -26,6 +26,10 @@ ul#action_bar{
 		&.right{
 			float: right;
 		}
+		h1{
+			margin: 0px; padding: 8px;
+			line-height: 32px; font-size: 32px;
+		}
 		a img{
 			padding: 7px 8px 6px;
 		}
