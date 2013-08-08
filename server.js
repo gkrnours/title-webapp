@@ -18,6 +18,7 @@ app.configure(function(){
 	app.set("view engine", "html")
 	app.set("views", views_dir)
 	app.set("port", nv["OPENSHIFT_NODEJS_PORT"] || 3000)
+	app.set("ip", nv["OPENSHIFT_NODEJS_IP"] || "127.0.0.1")
 
 	app.use("/css", express.static(__dirname+"/data/css"))
 	app.use("/img", express.static(__dirname+"/data/img"))
@@ -40,6 +41,6 @@ app.configure('development', function(){
 
 routes.setup(app)
 
-http.createServer(app).listen(app.get('port'), function(){
+http.createServer(app).listen(app.get('port'), app.get('ip'), function(){
 	console.log("Express server listening on port " + app.get('port'));
 });
