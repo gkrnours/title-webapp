@@ -1,0 +1,29 @@
+$blue1:  #33B5E5;
+$blue2:  #0099CC;
+$green1: #99CC00;
+$green2: #669900;
+$pink1:  #AA66CC;
+$pink2:  #9933CC;
+$yellow1:#FFBB33;
+$yellow2:#FF8800;
+$red1:   #FF4444;
+$red2:   #CC0000;
+
+$bg_start_dark: #000000;
+$bg_stop_dark: #101214;
+$action_dark: #222222;
+$split_dark: #555555;
+$menu_dark: #282828;
+$tab_bd_dark: #424242;
+$tab_dark: #333333;
+$btn_dark: #444444; 
+
+
+$bg_start: $bg_start_dark;
+$bg_stop: $bg_stop_dark;
+$action: $action_dark;
+$split: $action_dark; // use split dark for light with dark action bar
+$menu: $menu_dark;
+$tab_bd: $tab_bd_dark;
+$tab: $tab_dark;
+$btn: $btn_dark;

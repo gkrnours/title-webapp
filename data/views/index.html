@@ -1,0 +1,7 @@
+{% extends "tpl.html" %}
+
+{%block main%}
+<dl>{%for item in nv%}
+	<dt>{{loop.key}}<dt><dd>{{item}}</dd>{%endfor%}
+</dl>
+{%endblock%}

@@ -1,0 +1,58 @@
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  margin: 0px;
+  background-image: linear-gradient(180deg, black, #101214);
+  background-attachment: fixed;
+  background-size: 100%;
+  line-height: 16px;
+  font-family: "droid sans";
+  color: white; }
+
+ul#action_bar {
+  height: 45px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #222222;
+  border-top: 1px solid #393939;
+  border-bottom: 2px solid #1a1a1a; }
+  ul#action_bar li {
+    display: inline-block;
+    float: left; }
+    ul#action_bar li.right {
+      float: right; }
+    ul#action_bar li a img {
+      padding: 7px 8px 6px; }
+
+ul.tab {
+  display: block;
+  height: 48px;
+  margin: 0px;
+  padding: 0px;
+  clear: both;
+  background-color: #333333; }
+  ul.tab li {
+    display: inline-block;
+    margin: 0px;
+    padding: 16px 32px 16px 0px;
+    border-style: solid;
+    border-width: 0px;
+    color: white;
+    font-weight: bold; }
+    ul.tab li:first-of-type {
+      padding-left: 16px; }
+    ul.tab li:not(:first-of-type)::before {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 24px;
+      margin: -4px 32px -4px 0;
+      background: #424242;
+      vertical-align: middle; }
+    ul.tab li a {
+      color: white;
+      text-decoration: none; }
+      ul.tab li a:visited {
+        color: #FFFFFF; }
