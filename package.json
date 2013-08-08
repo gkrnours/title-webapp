@@ -24,9 +24,9 @@
 		"express": ">= 3.3.0",
 		"consolidate": ">= 0.9.1",
 		"connect-redis": ">= 1.4.5",
-		"redis": ">= 0.8.0",
 		"swig": ">= 0.14.0",
-		"oauth": ">= 0.9.10"
+		"mod": "= 0.0.0"
+		"db": "= 0.0.0"
   },
   "devDependencies": {},
   "bundleDependencies": [],

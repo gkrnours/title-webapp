@@ -5,8 +5,9 @@
 var express = require("express")
 var template= require("consolidate")
 var rsStore = require("connect-redis")(express)
-var routes  = require("./routes.js")
 var http = require("http")
+var mod  = require("mod")
+var db   = require("db")
 
 var app = express()
 var views_dir = __dirname+"/data/views"
@@ -26,20 +27,20 @@ app.configure(function(){
 	app.use(express.favicon("data/img/favicon.ico"));
 
 	app.use(express.logger('dev'));
+	app.use(express.query());
 	app.use(express.bodyParser());
 	app.use(express.methodOverride());
-	app.use(express.cookieParser("cherry pie"));
-	app.use(express.session({secret:"cherry pie", cookie: {maxAge: 180*1000}}));
+	app.use(express.session({secret:"cherry pie", cookie: {maxAge:86400000},
+		store: new rsStore({client: db.r})
+	}));
 	app.use(app.router);
-//	app.use(routes.err.gotcha) // check if the error is known
-//	app.use(routes.err.generic)// throw pretty error at the user
+	mod.setup(app)
 });
 
 app.configure('development', function(){
 	app.use(express.errorHandler());
 });
 
-routes.setup(app)
 
 http.createServer(app).listen(app.get('port'), app.get('ip'), function(){
 	console.log("Express server listening on port " + app.get('port'));
