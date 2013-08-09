@@ -75,7 +75,7 @@ ul.tab {
     color: white;
     font-weight: bold; }
     ul.tab li:first-of-type {
-      padding-left: 16px; }
+      padding-left: 32px; }
     ul.tab li:not(:first-of-type)::before {
       content: "";
       display: inline-block;
