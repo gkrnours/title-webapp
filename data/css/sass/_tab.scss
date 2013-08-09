@@ -22,6 +22,10 @@ ul.tab{
 			padding: 16px 32px;
 			color: white;
 			text-decoration: none;
+			&.selected{
+				padding-bottom: 14px;
+				border-bottom: 2px solid $blue1;
+			}
 			&:hover{
 				background-color: lighten($tab, 2%);
 			}

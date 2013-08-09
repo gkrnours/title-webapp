@@ -83,6 +83,9 @@ ul.tab {
       padding: 16px 32px;
       color: white;
       text-decoration: none; }
+      ul.tab li a.selected {
+        padding-bottom: 14px;
+        border-bottom: 2px solid #33b5e5; }
       ul.tab li a:hover {
         background-color: #383838; }
       ul.tab li a:visited {
