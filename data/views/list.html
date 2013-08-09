@@ -1,0 +1,9 @@
+{% extends "tpl.html" %}
+
+{%block main%}
+<pre>
+<ul>{% for item in list%}
+	<li>{{loop.key}} &mdash; {{item|json_encode(2)}}</li>{%endfor%}
+</ul>
+</pre>
+{%endblock%}

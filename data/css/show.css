@@ -25,11 +25,39 @@ ul#action_bar {
       float: right; }
     ul#action_bar li h1 {
       margin: 0px;
-      padding: 8px;
+      padding: 8px 0;
+      text-indent: 16px;
       line-height: 32px;
       font-size: 32px; }
     ul#action_bar li a img {
       padding: 7px 8px 6px; }
+
+h2 {
+  display: inline-block;
+  padding: 12px 8px;
+  text-indent: 16px;
+  line-height: 24px;
+  font-size: 24px;
+  border-bottom: 2px solid #0099cc; }
+  h2.ok {
+    border-color: #669900; }
+  h2.error {
+    border-color: #cc0000; }
+
+p {
+  padding: 0 8px;
+  text-indent: 16px;
+  line-height: 16px;
+  font-size: 14px;
+  text-align: justify; }
+
+pre {
+  margin-left: 16px;
+  padding: 0 8px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #4d4d4d;
+  border-left: 4px dashed #4d4d4d; }
 
 ul.tab {
   display: block;

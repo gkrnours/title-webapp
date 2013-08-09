@@ -21,7 +21,7 @@
   },
 
   "dependencies": {
-		"express": ">= 3.3.0",
+		"express": ">= 3.3.4",
 		"consolidate": ">= 0.9.1",
 		"connect-redis": ">= 1.4.5",
 		"swig": ">= 0.14.0",

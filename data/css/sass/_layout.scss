@@ -27,7 +27,8 @@ ul#action_bar{
 			float: right;
 		}
 		h1{
-			margin: 0px; padding: 8px;
+			margin: 0px; padding: 8px 0;
+			text-indent: 16px;
 			line-height: 32px; font-size: 32px;
 		}
 		a img{
@@ -35,3 +36,26 @@ ul#action_bar{
 		}
 	}
 }
+
+h2{
+	display: inline-block;
+	padding: 12px 8px;
+	text-indent: 16px;
+	line-height: 24px; font-size: 24px;
+	border-bottom: 2px solid $blue2;
+	&.ok{	   border-color: $green2; }
+	&.error{ border-color: $red2; }
+}
+p{
+	padding: 0 8px;
+	text-indent: 16px;
+	line-height: 16px; font-size: 14px;
+	text-align: justify;
+}
+pre{
+	margin-left: 16px; padding: 0 8px;
+	line-height: 16px; font-size: 14px;
+	color: hsl(0, 0%, 30%);
+	border-left: 4px dashed hsl(0, 0%, 30%);
+}
+

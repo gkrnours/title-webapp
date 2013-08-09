@@ -30,9 +30,9 @@ app.configure(function(){
 	app.use(express.query());
 	app.use(express.bodyParser());
 	app.use(express.methodOverride());
+	app.use(express.cookieParser("cherry pie"));
 	app.use(express.session({secret:"cherry pie", cookie: {maxAge:86400000},
-		store: new rsStore({client: db.r})
-	}));
+		store: new rsStore({client: db.r}) }) );
 	app.use(app.router);
 	mod.setup(app)
 });
