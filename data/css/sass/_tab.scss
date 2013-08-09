@@ -8,24 +8,23 @@ ul.tab{
 	background-color: $tab;
 	li{
 		display: inline-block;
-		margin: 0px; padding: 16px 32px 16px 0px;
-		border-style: solid; border-width: 0px;
-		color: white;
-		font-weight: bold;
-		&:first-of-type{
-			padding-left: 32px;
-		}
-		&:not(:first-of-type)::before{
-			content: "";
-			display: inline-block;
-			width: 1px; height: 24px;
-			margin: -4px 32px -4px 0;
-			background: $tab_bd;
-			vertical-align: middle;
+		margin: 0px; margin-left: -4px; padding: 0px;
+		color: white; font-weight: bold;
+		border-width: 0;
+		&:not(:first-of-type){
+			border-left-width: 1px;
+			border-image: linear-gradient(0deg, $tab 12px, $tab_bd 12px, $tab_bd
+			36px, $tab 36px) 3 stretch;
 		}
 		a{
+			display: block;
+			height: 16px;
+			padding: 16px 32px;
 			color: white;
 			text-decoration: none;
+			&:hover{
+				background-color: lighten($tab, 2%);
+			}
 			&:visited{
 				color: #FFFFFF;
 			}
