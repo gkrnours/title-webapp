@@ -1,7 +1,8 @@
 {% extends "tpl.html" %}
 
 {%block main%}
-<h2 class="error">{{error.number}}: {{error.name}}</h2>
+<h2 class="error">{%if error.number%}{{error.number}}:{%endif%}
+	{{error.name}}</h2>
 <p>{{error.message}}</p>
 {%if error_message%}
 	<p>{{error_message|replace("\n", "<br>")|raw}}</p>
