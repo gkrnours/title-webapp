@@ -11,9 +11,13 @@
 	</head>
 	<body>
 		<ul id="action_bar">
-			<li>
-				<h1>Choose My Title</h1>
+{%if me%}			<li>
+				<h2>{{me.name}}</h2>
+				<h3>{{me.title|raw}}</h3>
 			</li>
+{%else%}			<li>
+				<h1>Choose My Title</h1>
+			</li>{%endif%}
 			<li class="right">
 				<a href="/login">
 					<img src="/img/new_account.png" />
