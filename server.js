@@ -38,8 +38,9 @@ app.configure(function(){
 		next()
 	})
 	app.use(app.router);
-	mod.setup(app)
 });
+
+mod.setup(app)
 
 app.configure('development', function(){
 	app.use(express.errorHandler());
